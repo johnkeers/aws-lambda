@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../aws-lambdas">
+      <excludeFolder url="file://$MODULE_DIR$/../aws-lambdas/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/../aws-lambdas/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/../aws-lambdas/.aws-sam" />
+      <excludeFolder url="file://$MODULE_DIR$/../aws-lambdas/temp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="deploySettings">
+    <option name="samConfigs">
+      <map>
+        <entry key="template.yaml">
+          <value>
+            <DeploySamConfig>
+              <option name="autoExecute" value="true" />
+              <option name="bucketName" value="bca-s3" />
+              <option name="enabledCapabilities">
+                <list>
+                  <option value="IAM" />
+                  <option value="NAMED_IAM" />
+                </list>
+              </option>
+              <option name="stackName" value="bca-aws-stack" />
+            </DeploySamConfig>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</module>
